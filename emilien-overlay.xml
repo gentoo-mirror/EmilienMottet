@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <repositories version="1.0">
   <repo quality="experimental" status="unofficial">
-    <name>Emilien Mottet</name>
+    <name>EmilienMottet</name>
 	  <description lang="en">Gentoo Overlay for my personal/work needs.</description>
     <homepage>https://github.com/EmilienMottet/overlay</homepage>
     <owner type="person">
