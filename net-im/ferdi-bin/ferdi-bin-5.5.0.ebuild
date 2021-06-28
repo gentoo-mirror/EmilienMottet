@@ -1,39 +1,58 @@
-# Copyright 1999-2021 Gentoo Authors
+
+# Copyright 2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit unpacker
+inherit gnome2-utils rpm xdg
 
-MY_PN="${PN/-bin}"
-MY_P="${MY_PN}_${PV}"
+MY_PN=${PN/-bin}
 
 DESCRIPTION="Ferdi helps you organize how you use your favourite apps by combining them into one application"
 HOMEPAGE="https://github.com/getferdi/ferdi/"
-SRC_URI="https://github.com/getferdi/ferdi/releases/download/v${PV}/${MY_P}_amd64.deb"
+SRC_URI="amd64? ( https://github.com/getferdi/ferdi/releases/download/v5.5.0/ferdi-${PV}.x86_64.rpm )"
 
-LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
+LICENSE="GPL-3"
 
-RESTRICT="mirror strip"
-DOCS="changelog"
+QA_EXECSTACK="opt/${MY_PN^}/${MY_PN}"
+QA_PRESTRIPPED="opt/${MY_PN^}/lib.*
+	opt/${MY_PN^}/${MY_PN}
+	opt/${MY_PN^}/swiftshader/lib.*"
+
+DEPEND="dev-libs/libpcre:3
+	dev-libs/libtasn1:0
+	dev-libs/nettle:0
+	dev-libs/nspr:0
+	dev-libs/nss:0
+	gnome-base/gconf:2
+	media-libs/alsa-lib:0
+	media-libs/libpng:0
+	net-libs/gnutls:0
+	x11-libs/gtk+:2
+	x11-libs/libXScrnSaver:0"
+RDEPEND="${DEPEND}"
+
 S="${WORKDIR}"
 
-src_unpack() {
-	unpack_deb ${A}
-}
-
-src_prepare() {
-	mv usr/share/doc/${MY_PN}/changelog.gz .
-	rm -rf usr/share/doc
-	gzip -d ./changelog.gz
-	default
-}
-
 src_install() {
-	mkdir -p "${ED}"
-	cp -r ./usr "${ED}"/
-	cp -r ./opt "${ED}"/
-	default
+	rm -rf "${S}"/usr/lib/.build-id || die
+	mv "${S}"/{opt,usr} "${D}"/ || die
 }
+
+pkg_preinst() {
+	gnome2_icon_savelist
+	xdg_pkg_preinst
+}
+
+pkg_postinst() {
+	gnome2_icon_cache_update
+	xdg_pkg_postinst
+}
+
+pkg_postrm() {
+	gnome2_icon_cache_update
+	xdg_pkg_postrm
+}
+
