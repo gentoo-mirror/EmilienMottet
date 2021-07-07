@@ -2,12 +2,13 @@
 <repositories version="1.0">
   <repo quality="experimental" status="unofficial">
     <name>EmilienMottet</name>
-	  <description lang="en">Gentoo Overlay for my personal/work needs.</description>
+	  <description lang="en">Gentoo Overlay for Emilien Mottet personal/work needs.</description>
     <homepage>https://github.com/EmilienMottet/overlay</homepage>
     <owner type="person">
       <name>Emilien Mottet</name>
       <email>emilien.mottet@grenoble-inp.org</email>
     </owner>
+    <source type="git">https://github.com/EmilienMottet/overlay.git</source>
     <source type="git">git://github.com/EmilienMottet/overlay</source>
     <feed>https://github.com/EmilienMottet/overlay/commits/master.atom</feed>
   </repo>
