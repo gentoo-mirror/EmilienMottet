@@ -1,0 +1,11 @@
+<pkgmetadata>
+  <maintainer type="person">
+    <email>emilien.mottet@grenoble-inp.org</email>
+    <name>Emilien Mottet</name>
+  </maintainer>
+  <upstream>
+    <bugs-to>https://github.com/cdemoulins/pamixer/issues</bugs-to>
+    <remote-id type="github">cdemoulins/pamixer</remote-id>
+  </upstream>
+  <longdescription lang="en"> Pulseaudio command-line mixer like amixer. </longdescription>
+</pkgmetadata>
