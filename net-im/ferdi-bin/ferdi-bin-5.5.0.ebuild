@@ -1,5 +1,5 @@
 
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -10,7 +10,7 @@ MY_PN=${PN/-bin}
 
 DESCRIPTION="Ferdi helps you organize how you use your favourite apps by combining them into one application"
 HOMEPAGE="https://github.com/getferdi/ferdi/"
-SRC_URI="amd64? ( https://github.com/getferdi/ferdi/releases/download/v5.5.0/ferdi-${PV}.x86_64.rpm )"
+SRC_URI="amd64? ( https://github.com/getferdi/ferdi/releases/download/v${PV}/ferdi-${PV}.x86_64.rpm )"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
@@ -55,4 +55,3 @@ pkg_postrm() {
 	gnome2_icon_cache_update
 	xdg_pkg_postrm
 }
-
