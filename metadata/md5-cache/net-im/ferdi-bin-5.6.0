@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare unpack
+DESCRIPTION=Ferdi helps you organize how you use your favourite apps by combining them into one application
+EAPI=7
+HOMEPAGE=https://github.com/getferdi/ferdi/
+INHERIT=unpacker
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=https://github.com/getferdi/ferdi/releases/download/v5.6.0/ferdi_5.6.0_amd64.deb
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	unpacker	2eeba54233fa41bdb15dcddcb63fba3a
+_md5_=4f3961568519d2509da6629816cd3a3b
