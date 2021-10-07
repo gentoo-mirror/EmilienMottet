@@ -18,13 +18,18 @@ RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
-CXXFLAGS="${CXXFLAGS} -DVERSION=\"${git describe --abbrev=4 --dirty --always --tags}\""
+CXXFLAGS="${CXXFLAGS} "
 
 RDEPEND="
 	dev-libs/boost
 	media-sound/pulseaudio[alsa]"
 
 DEPEND="${RDEPEND}"
+
+src_configure() {
+	append-cxxflags \
+		-DVERSION=$(git describe --abbrev=4 --dirty --always --tags)
+}
 
 src_install() {
 	dobin ${PN}
