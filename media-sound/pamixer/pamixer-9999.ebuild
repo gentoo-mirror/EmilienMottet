@@ -7,7 +7,7 @@ DESCRIPTION="Pulseaudio command line mixer."
 HOMEPAGE="https://github.com/cdemoulins/pamixer"
 
 if [[ ${PV} == *9999 ]]; then
-	inherit git-r3
+	inherit git-r3 flag-o-matic
 	EGIT_REPO_URI="https://github.com/cdemoulins/pamixer"
 else
 	SRC_URI="https://github.com/cdemoulins/pamixer/archive/${PV}.tar.gz -> ${P}.tar.gz"
@@ -26,9 +26,12 @@ RDEPEND="
 
 DEPEND="${RDEPEND}"
 
-src_configure() {
-	append-cxxflags \
-		-DVERSION=$(git describe --abbrev=4 --dirty --always --tags)
+src_compile() {
+	if [[ ${PV} == *9999 ]]; then
+		append-cxxflags \
+			-DVERSION="\\\"$(git describe --abbrev=4 --dirty --always --tags)\\\""
+	fi
+	default
 }
 
 src_install() {
