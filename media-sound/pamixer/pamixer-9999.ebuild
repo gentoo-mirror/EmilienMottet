@@ -18,6 +18,7 @@ RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
+CXXFLAGS="${CXXFLAGS} -DVERSION=\"${git describe --abbrev=4 --dirty --always --tags}\""
 
 RDEPEND="
 	dev-libs/boost
