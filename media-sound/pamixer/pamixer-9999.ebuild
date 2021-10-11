@@ -6,35 +6,16 @@ EAPI=7
 DESCRIPTION="Pulseaudio command line mixer."
 HOMEPAGE="https://github.com/cdemoulins/pamixer"
 
-if [[ ${PV} == *9999 ]]; then
-	inherit git-r3 flag-o-matic
-	EGIT_REPO_URI="https://github.com/cdemoulins/pamixer"
-else
-	SRC_URI="https://github.com/cdemoulins/pamixer/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~x86"
-fi
+inherit git-r3 meson
+EGIT_REPO_URI="https://github.com/cdemoulins/pamixer"
 
 RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
-CXXFLAGS="${CXXFLAGS} "
 
 RDEPEND="
 	dev-libs/boost
 	media-sound/pulseaudio[alsa]"
 
 DEPEND="${RDEPEND}"
-
-src_compile() {
-	if [[ ${PV} == *9999 ]]; then
-		append-cxxflags \
-			-DVERSION="\\\"$(git describe --abbrev=4 --dirty --always --tags)\\\""
-	fi
-	default
-}
-
-src_install() {
-	dobin ${PN}
-	dodoc README.rst
-}
