@@ -8,5 +8,5 @@ LICENSE=Apache-2.0
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=https://github.com/getferdi/ferdi/releases/download/v5.6.0/ferdi_5.6.0_amd64.deb
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4b66d835ec72e021e359bb81eacfe988	unpacker	928e1f35ef78ba9fc2b214e29c2b55a4
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	8a0248f83ae77f945d376ff4a7953257	unpacker	928e1f35ef78ba9fc2b214e29c2b55a4
 _md5_=4f3961568519d2509da6629816cd3a3b
