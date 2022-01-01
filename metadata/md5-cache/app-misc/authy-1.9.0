@@ -1,4 +1,4 @@
-BDEPEND=sys-fs/squashfs-tools
+BDEPEND=sys-fs/squashfs-tools[lzma]
 DEFINED_PHASES=compile install prepare
 DEPEND=media-video/ffmpeg dev-libs/libdbusmenu dev-libs/libappindicator dev-libs/nss x11-libs/gtk+:3 sys-apps/dbus dev-libs/libbsd dev-libs/expat sys-apps/keyutils sys-libs/e2fsprogs-libs media-libs/libglvnd
 DESCRIPTION=2FA software
@@ -11,4 +11,4 @@ RDEPEND=media-video/ffmpeg dev-libs/libdbusmenu dev-libs/libappindicator dev-lib
 SLOT=0
 SRC_URI=https://api.snapcraft.io/api/v1/snaps/download/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_7.snap
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
-_md5_=3c09a1e775f3556e1ad430074103e60b
+_md5_=4b45ef85102cfa8da248ea6c3514e0ad
