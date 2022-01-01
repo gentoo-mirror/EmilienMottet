@@ -1,13 +1,14 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit desktop
 
+SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_7"
 DESCRIPTION="2FA software"
 HOMEPAGE="https://authy.com/"
-SRC_URI="https://api.snapcraft.io/api/v1/snaps/download/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
+SRC_URI="https://api.snapcraft.io/api/v1/snaps/download/${SNAP_NAME}.snap"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -29,14 +30,14 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
-	sys-fs/squashfs-tools-ng[xz]
+	sys-fs/squashfs-tools
 "
 S="${WORKDIR}"
-SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
 src_prepare() {
 	default
-	rdsquashfs -u / -p "${S}/authy" "${DISTDIR}/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
-	rm -rf "${S}"/authy/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	unsquashfs "${DISTDIR}/${SNAP_NAME}.snap"
+	rm -rf "${S}"/squashfs-root/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	mv squashfs-root authy
 }
 src_compile() {
 	return
