@@ -1,4 +1,4 @@
-app-misc/authy 1.8.3: 2FA software
+app-misc/authy 1.9.0: 2FA software
 app-misc/hello-world 1.0: A classical example to use when starting on something new
 media-sound/pamixer 1.4 9999: Pulseaudio command line mixer.
 net-im/ferdi-bin 5.5.0 5.6.0 5.6.2 5.6.3 5.6.4 5.6.5: Combine your favorite messaging services into one application
