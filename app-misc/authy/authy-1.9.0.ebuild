@@ -30,7 +30,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
-	sys-fs/squashfs-tools
+	sys-fs/squashfs-tools[lzma]
 "
 S="${WORKDIR}"
 src_prepare() {
