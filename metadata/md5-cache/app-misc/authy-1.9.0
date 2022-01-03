@@ -1,14 +1,14 @@
 BDEPEND=sys-fs/squashfs-tools[lzma]
 DEFINED_PHASES=compile install prepare
-DEPEND=media-video/ffmpeg dev-libs/libdbusmenu dev-libs/libappindicator dev-libs/nss x11-libs/gtk+:3 sys-apps/dbus dev-libs/libbsd dev-libs/expat sys-apps/keyutils sys-libs/e2fsprogs media-libs/libglvnd
+DEPEND=media-video/ffmpeg dev-libs/libdbusmenu dev-libs/libappindicator dev-libs/nss x11-libs/gtk+:3 sys-apps/dbus dev-libs/libbsd dev-libs/expat sys-apps/keyutils sys-fs/e2fsprogs media-libs/libglvnd
 DESCRIPTION=2FA software
 EAPI=8
 HOMEPAGE=https://authy.com/
 INHERIT=desktop
 KEYWORDS=~amd64
 LICENSE=all-rights-reserved
-RDEPEND=media-video/ffmpeg dev-libs/libdbusmenu dev-libs/libappindicator dev-libs/nss x11-libs/gtk+:3 sys-apps/dbus dev-libs/libbsd dev-libs/expat sys-apps/keyutils sys-libs/e2fsprogs media-libs/libglvnd
+RDEPEND=media-video/ffmpeg dev-libs/libdbusmenu dev-libs/libappindicator dev-libs/nss x11-libs/gtk+:3 sys-apps/dbus dev-libs/libbsd dev-libs/expat sys-apps/keyutils sys-fs/e2fsprogs media-libs/libglvnd
 SLOT=0
 SRC_URI=https://api.snapcraft.io/api/v1/snaps/download/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_7.snap
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
-_md5_=d89d46b25e2c964e6cc27e555dab0185
+_md5_=8c4525d25304f60fbacab2228a41d5ec
