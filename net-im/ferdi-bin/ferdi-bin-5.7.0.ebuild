@@ -47,15 +47,11 @@ S=${WORKDIR}
 src_prepare() {
 	bsdtar -x -f data.tar.xz
 	rm data.tar.xz control.tar.gz debian-binary
-	local myargs=()
 	if use wayland; then
-		myargs+=(
-			--enable-features=UseOzonePlatform
-			--ozone-platform=wayland
-			--enable-webrtc-pipewire-capturer
-		)
+		sed -E -i -e "s|Exec=/opt/${_PN^}/${_PN}|Exec=/usr/bin/${PN} --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-webrtc-pipewire-capturer|" "usr/share/applications/${_PN}.desktop"
+	else
+		sed -E -i -e "s|Exec=/opt/${_PN^}/${_PN}|Exec=/usr/bin/${PN}|" "usr/share/applications/${_PN}.desktop"
 	fi
-	sed -E -i -e "s|Exec=/opt/${_PN^}/${_PN}|Exec=/usr/bin/${PN} ${myargs[@]}|" "usr/share/applications/${_PN}.desktop"
 	default
 }
 
