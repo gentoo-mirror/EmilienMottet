@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,6 +12,7 @@ HOMEPAGE="https://getferdi.com"
 
 LICENSE="Apache-2.0"
 SLOT="0"
+IUSE="wayland"
 KEYWORDS="-* ~amd64 ~arm ~arm64"
 SRC_URI="
 amd64? ( https://github.com/get${_PN}/${_PN}/releases/download/v${PV}/${_PN}_${PV}_amd64.deb )
@@ -34,7 +35,8 @@ x11-libs/libXtst
 sys-libs/zlib[minizip]
 dev-libs/nss
 dev-libs/re2
-app-arch/snappy"
+app-arch/snappy
+wayland? ( dev-libs/wayland )"
 
 DEPEND="!net-im/ferdi"
 
@@ -45,7 +47,15 @@ S=${WORKDIR}
 src_prepare() {
 	bsdtar -x -f data.tar.xz
 	rm data.tar.xz control.tar.gz debian-binary
-	sed -E -i -e "s|Exec=/opt/${_PN^}/${_PN}|Exec=/usr/bin/${PN}|" "usr/share/applications/${_PN}.desktop"
+	local myargs=()
+	if use wayland; then
+		myargs+=(
+			--enable-features=UseOzonePlatform
+			--ozone-platform=wayland
+			--enable-webrtc-pipewire-capturer
+		)
+	fi
+	sed -E -i -e "s|Exec=/opt/${_PN^}/${_PN}|Exec=/usr/bin/${PN} ${myargs[@]}|" "usr/share/applications/${_PN}.desktop"
 	default
 }
 
