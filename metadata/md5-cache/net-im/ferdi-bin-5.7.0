@@ -11,4 +11,4 @@ RDEPEND=media-libs/alsa-lib net-dns/c-ares media-video/ffmpeg x11-libs/gtk+:3 de
 SLOT=0
 SRC_URI=amd64? ( https://github.com/getferdi/ferdi/releases/download/v5.7.0/ferdi_5.7.0_amd64.deb ) arm? ( https://github.com/getferdi/ferdi/releases/download/v5.7.0/ferdi_5.7.0_armv7l.deb ) arm64? ( https://github.com/getferdi/ferdi/releases/download/v5.7.0/ferdi_5.7.0_arm64.deb )
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	xdg-utils	4f29a8b760a594a212abe9c2ba957c31
-_md5_=9f6594dfb3f099c102b5bc810cc31687
+_md5_=e3000a11a2fe73c0d7ea0d0010a75825
