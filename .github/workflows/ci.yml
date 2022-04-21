@@ -1,0 +1,20 @@
+---
+name: Overlay QA
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  repoman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: Woomymy/action-run-repoman@main
+
+  pkgcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: Woomymy/action-run-pkgcheck@main
