@@ -4,6 +4,7 @@
 EAPI=7
 
 _PN="${PN/-bin/}"
+ELECTRON_APP_ELECTRON_V="18.2.1"
 
 inherit git-r3 desktop xdg-utils electron-app
 
@@ -18,7 +19,7 @@ EGIT_REPO_URI="https://github.com/getferdi/ferdi.git"
 
 RDEPEND="
 wayland? ( dev-libs/wayland )"
-
+BDEPEND+=" net-libs/nodejs[npm]"
 DEPEND="!net-im/ferdi-bin"
 
 # src_prepare() {
@@ -59,12 +60,18 @@ DEPEND="!net-im/ferdi-bin"
 # 	done
 # }
 
-pkg_postinst() {
-	xdg_desktop_database_update
-	xdg_mimeinfo_database_update
+
+src_unpack() {
+	git-r3_src_unpack
+	default
 }
 
-pkg_postrm() {
-	xdg_desktop_database_update
-	xdg_mimeinfo_database_update
-}
+# pkg_postinst() {
+# 	xdg_desktop_database_update
+# 	xdg_mimeinfo_database_update
+# }
+
+# pkg_postrm() {
+# 	xdg_desktop_database_update
+# 	xdg_mimeinfo_database_update
+# }
