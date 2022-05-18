@@ -13,4 +13,4 @@ RDEPEND=wayland? ( dev-libs/wayland ) app-accessibility/speech-dispatcher dev-db
 REQUIRED_USE=|| ( unpacked )
 SLOT=0
 _eclasses_=toolchain-funcs	fd9cde67030b26e479eeadaced488253	multilib	4fbbbc98f236f1b43acd99476bc3cd85	linux-info	dcbf4f67bc38bee48e9d69a4344e8059	chromium-2	fe5bb568da464344d16c90acb1c6e91e	desktop	c0d27bf73aa08ca05b663dbd31fbef28	edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4a1902f969e5718126434fc35f3a0d9c	eutils	dab5d8ec471d025b79c9e6906bcf3bff	npm-utils	82ee40100c6b9a8f9d052f6ea3aceda9	electron-app	87b62503f12899286ad985a2044a9419	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
-_md5_=ff862b6c807fe8e6d69fc7871d0bf41b
+_md5_=209a781c5087b1d75f4907ac03be96d8
