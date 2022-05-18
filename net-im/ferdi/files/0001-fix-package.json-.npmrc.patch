@@ -1,0 +1,43 @@
+From 6f5d5ecfc4e9e78b6b4c4e6ed499f6791c54a110 Mon Sep 17 00:00:00 2001
+From: EmilienMottet <emilien.mottet@grenoble-inp.org>
+Date: Mon, 16 May 2022 16:42:52 +0200
+Subject: [PATCH] fix package.json & .npmrc
+
+---
+ .npmrc       | 2 +-
+ package.json | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/.npmrc b/.npmrc
+index ece05f58..84deb54c 100644
+--- a/.npmrc
++++ b/.npmrc
+@@ -1,2 +1,2 @@
+-engine-strict = true
++engine-strict = false
+ legacy-peer-deps = true
+diff --git a/package.json b/package.json
+index fefaebc5..d9feb14e 100644
+--- a/package.json
++++ b/package.json
+@@ -16,7 +16,7 @@
+   },
+   "engine-strict": true,
+   "scripts": {
+-    "prepare": "is-ci || husky install",
++    "prepare": "is-ci || husky install || true",
+     "start": "electron ./build",
+     "start:local": "cross-env USE_LOCAL_API=1 npm start",
+     "start:live": "cross-env USE_LIVE_API=1 npm start",
+@@ -199,7 +199,7 @@
+     "webpack-dev-server": "^3.11.2"
+   },
+   "optionalDependencies": {
+-    "node-mac-permissions": "git@github.com:vraravam/node-mac-permissions.git#3cffec37379e6584627d831611a8ff12b57bbcdb"
++    "node-mac-permissions": "https://github.com/codebytere/node-mac-permissions.git#3cffec37379e6584627d831611a8ff12b57bbcdb"
+   },
+   "browserslist": [
+     "last 2 Chrome versions"
+-- 
+2.35.1
+

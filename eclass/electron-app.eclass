@@ -1,5 +1,5 @@
 # Copyright 2019-2020 Orson Teodoro
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # @ECLASS: electron-app.eclass
@@ -15,17 +15,17 @@
 # maintain a secure environment.
 
 case "${EAPI:-0}" in
-        0|1|2|3|4|5)
-                die "Unsupported EAPI=${EAPI:-0} (too old) for ${ECLASS}"
-                ;;
-        6)
+		0|1|2|3|4|5)
+				die "Unsupported EAPI=${EAPI:-0} (too old) for ${ECLASS}"
+				;;
+		6)
 		inherit eapi7-ver
 		;;
 	7)
-                ;;
-        *)
-                die "Unsupported EAPI=${EAPI} (unknown) for ${ECLASS}"
-                ;;
+				;;
+		*)
+				die "Unsupported EAPI=${EAPI} (unknown) for ${ECLASS}"
+				;;
 esac
 
 
@@ -626,7 +626,7 @@ _ELECTRON_APP_PACKAGING_METHODS+=( appimage )
 RDEPEND+=" appimage? ( || (
 		app-arch/appimaged
 		app-arch/go-appimage[appimaged]
-		    )    )"
+			)    )"
 # emerge will dump the .AppImage in that folder.
 ELECTRON_APP_APPIMAGE_INSTALL_DIR=\
 ${ELECTRON_APP_APPIMAGE_INSTALL_DIR:="/opt/AppImage/${PN}"}
@@ -716,7 +716,7 @@ electron-app_audit_fix() {
 # @DESCRIPTION:
 # Initializes globals
 electron-app_pkg_setup() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 
 	chromium_suid_sandbox_check_kernel_config
 
@@ -1165,7 +1165,7 @@ active_node_v=${node_v}.  Build failures may occur if deviation is too much."
 # @DESCRIPTION:
 # Runs phases for downloading dependencies, unpacking, building
 electron-app_src_unpack() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 
 	cd "${WORKDIR}"
 
@@ -1233,7 +1233,7 @@ electron-app_src_unpack() {
 # Fetches dependencies and audit fixes them.  Currently a stub.
 # TODO per package patching support.
 electron-app_src_prepare_default() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 
 	cd "${S}"
 	electron-app_fetch_deps
@@ -1245,7 +1245,7 @@ electron-app_src_prepare_default() {
 # @DESCRIPTION:
 # Installs the app.  Currently a stub.
 electron-app_src_install_default() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 
 	cd "${S}"
 
@@ -1272,7 +1272,7 @@ electron-app-build-yarn() {
 # @DESCRIPTION:
 # Builds an electron app.
 electron-app_src_compile_default() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 
 	cd "${S}"
 
@@ -1708,7 +1708,7 @@ electron-app-register-yarn() {
 }
 
 electron-app_pkg_preinst() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 	if has snap ${IUSE_EFFECTIVE} ; then
 		if use snap ; then
 			# Remove previous install
@@ -1734,7 +1734,7 @@ electron-app_pkg_preinst() {
 # or absolute path (starting with /) to scan for vulnerabilities containing
 # node_modules.
 electron-app_pkg_postinst() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 
 	if has snap ${IUSE_EFFECTIVE} ; then
 		if use snap ; then
@@ -1776,7 +1776,7 @@ the emerge system to update it."
 # @DESCRIPTION:
 # Post-removal hook for Electron apps. Removes information required for security checks.
 electron-app_pkg_postrm() {
-        debug-print-function ${FUNCNAME} "${@}"
+		debug-print-function ${FUNCNAME} "${@}"
 
 	case "${ELECTRON_APP_MODE}" in
 		npm)
@@ -1894,38 +1894,38 @@ electron-app_restore_package_jsons() {
 # This applies to use of electron-packager and electron-builder
 electron-app_get_arch() {
 	if [[ "${ARCH}" == "amd64" ]] ; then
-                echo "x64"
-        elif [[ "${ARCH}" == "x86" ]] ; then
-                echo "ia32"
-        elif [[ "${ARCH}" == "arm64" ]] ; then
-                echo "arm64"
-        elif [[ "${ARCH}" == "arm" ]] ; then
+				echo "x64"
+		elif [[ "${ARCH}" == "x86" ]] ; then
+				echo "ia32"
+		elif [[ "${ARCH}" == "arm64" ]] ; then
+				echo "arm64"
+		elif [[ "${ARCH}" == "arm" ]] ; then
 		if [[ "${CHOST}" =~ armv7* ]] ; then
-	                echo "armv7l"
+					echo "armv7l"
 		else
 			die "${CHOST} is not supported"
 		fi
-        elif [[ "${ARCH}" == "n64" ]] ; then
-                echo "mips64el"
+		elif [[ "${ARCH}" == "n64" ]] ; then
+				echo "mips64el"
 	else
 		die "${ARCH} not supported"
-        fi
+		fi
 }
 
 # @FUNCTION: electron-app_get_arch_suffix_snap
 # @DESCRIPTION: Gets the arch suffix found at the end of the archive
 electron-app_get_arch_suffix_snap() {
 	if [[ "${ARCH}" == "amd64" ]] ; then
-                echo "amd64"
-        elif [[ "${ARCH}" == "x86" ]] ; then
-                echo "i386"
-        elif [[ "${ARCH}" == "arm64" ]] ; then
-                echo "arm64"
-        elif [[ "${ARCH}" == "arm" ]] ; then
+				echo "amd64"
+		elif [[ "${ARCH}" == "x86" ]] ; then
+				echo "i386"
+		elif [[ "${ARCH}" == "arm64" ]] ; then
+				echo "arm64"
+		elif [[ "${ARCH}" == "arm" ]] ; then
 		if [[ "${CHOST}" =~ armv7* ]] ; then
-	                echo "armhf"
+					echo "armhf"
 		fi
-        fi
+		fi
 	echo "${CHOST%%-*}"
 }
 
@@ -1933,16 +1933,16 @@ electron-app_get_arch_suffix_snap() {
 # @DESCRIPTION: Gets the arch suffix found at the end of the archive
 electron-app_get_arch_suffix_appimage() {
 	if [[ "${ARCH}" == "amd64" ]] ; then
-                echo "x86_64"
-        elif [[ "${ARCH}" == "x86" ]] ; then
-                echo "i386"
-        elif [[ "${ARCH}" == "arm64" ]] ; then
-                echo "arm64"
-        elif [[ "${ARCH}" == "arm" ]] ; then
+				echo "x86_64"
+		elif [[ "${ARCH}" == "x86" ]] ; then
+				echo "i386"
+		elif [[ "${ARCH}" == "arm64" ]] ; then
+				echo "arm64"
+		elif [[ "${ARCH}" == "arm" ]] ; then
 		if [[ "${CHOST}" =~ armv7* ]] ; then
-	                echo "armhf"
+					echo "armhf"
 		fi
-        fi
+		fi
 	echo "${CHOST%%-*}"
 }
 
