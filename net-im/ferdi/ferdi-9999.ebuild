@@ -4,9 +4,9 @@
 EAPI=7
 
 _PN="${PN/-bin/}"
-ELECTRON_APP_ELECTRON_V="18.2.1"
+ELECTRON_APP_ELECTRON_V="18.1.0"
 
-inherit git-r3 desktop xdg-utils electron-app
+inherit electron-app git-r3
 
 DESCRIPTION="Combine your favorite messaging services into one application"
 HOMEPAGE="https://getferdi.com"
@@ -60,10 +60,42 @@ DEPEND="!net-im/ferdi-bin"
 # 	done
 # }
 
+# PATCHES=(
+# 	"${FILESDIR}/0001-fix-package.json-.npmrc.patch"
+# )
+
+# src_prepare() {
+# 	echo "src PREPARE"
+# 	default
+# }
 
 src_unpack() {
 	git-r3_src_unpack
-	default
+	# sed -E -i -e "s|engine-strict = true|engine-strict = false|" "${S}/.npmrc"
+	# sed -i 's/is-ci || husky install/is-ci || husky install || true/g' "${S}/package.json"
+	pushd "${S}" || die
+	eapply "${FILESDIR}/0001-fix-package.json-.npmrc.patch"
+	popd || die
+	electron-app_src_unpack
+}
+
+electron-app_src_compile() {
+	cd "${S}" || die
+	export PATH="${S}/node_modules/.bin:${PATH}"
+	npm run build -- -l dir || die
+}
+
+src_install() {
+	local cmd_args=""
+	export ELECTRON_APP_INSTALL_PATH="/opt/${PN}"
+	if use wayland ; then
+		cmd_args+=" -enable-features=WebRTCPipeWireCapturer --enable-features=UseOzonePlatform --ozone-platform=wayland"
+	fi
+
+	electron-app_desktop_install "out/linux-unpacked/*" "src/assets/logo.png" "${MY_PN}" \
+								 "Network;InstantMessaging" "${ELECTRON_APP_INSTALL_PATH}/ferdi \"\$@\""
+	fperms 0755 ${ELECTRON_APP_INSTALL_PATH}/ferdi
+	npm-utils_install_licenses
 }
 
 # pkg_postinst() {
