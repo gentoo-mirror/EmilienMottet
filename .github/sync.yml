@@ -1,0 +1,3 @@
+orsonteodoro/oiledmachine-overlay:
+  - eclass/electron-app.eclass
+  - eclass/npm-utils.eclass
