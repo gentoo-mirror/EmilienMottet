@@ -7,3 +7,7 @@ for ebuild in www-client/google-chrome**/*ebuild; do
     patch --no-backup-if-mismatch $ebuild chrome.patch
     rename -- .ebuild -r1.ebuild $ebuild
 done
+
+for ebuild in www-client/google-chrome**/*ebuild; do
+    ebuild $ebuild digest && sudo ebuild $ebuild clean merge
+done
