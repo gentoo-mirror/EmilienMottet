@@ -4,6 +4,6 @@ mail-client/thunderbird 102.0: Thunderbird Mail Client
 media-sound/pamixer 1.4 9999: Pulseaudio command line mixer.
 net-im/ferdi 9999: Combine your favorite messaging services into one application
 net-im/ferdi-bin 5.8.1: Combine your favorite messaging services into one application
-www-client/google-chrome 103.0.5060.134-r1: The web browser from Google
-www-client/google-chrome-beta 104.0.5112.57-r1: The web browser from Google
-www-client/google-chrome-unstable 105.0.5176.3-r1: The web browser from Google
+www-client/google-chrome 104.0.5112.79-r1: The web browser from Google
+www-client/google-chrome-beta 104.0.5112.79-r1: The web browser from Google
+www-client/google-chrome-unstable 105.0.5195.19-r1: The web browser from Google
