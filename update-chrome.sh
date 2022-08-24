@@ -7,8 +7,6 @@ i="1"
 rm -f www-client/google-chrome**/*ebuild
 cp -r /var/db/repos/gentoo/www-client/google-chrome* www-client/
 
-echo $files
-
 for ebuild in $files; do
     pattern=".ebuild"
     patch --no-backup-if-mismatch $ebuild chrome.patch
@@ -23,6 +21,5 @@ for ebuild in $files; do
 done
 
 for ebuild in $files; do
-    echo $ebuild
     ebuild $ebuild digest && sudo ebuild $ebuild clean merge
 done
