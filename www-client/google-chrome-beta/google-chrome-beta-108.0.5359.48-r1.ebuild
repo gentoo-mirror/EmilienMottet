@@ -30,10 +30,8 @@ IUSE="selinux X wayland"
 RESTRICT="bindist mirror strip"
 
 RDEPEND="
-	app-accessibility/at-spi2-atk:2
-	app-accessibility/at-spi2-core:2
+	>=app-accessibility/at-spi2-core-2.46.0:2
 	app-misc/ca-certificates
-	dev-libs/atk
 	dev-libs/expat
 	dev-libs/glib:2
 	dev-libs/nspr
