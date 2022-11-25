@@ -4,6 +4,6 @@ gui-apps/wl-mirror 0.12.2: a simple Wayland output mirror client
 mail-client/thunderbird 102.2.0-r1: Thunderbird Mail Client
 media-sound/pamixer 1.4 9999: Pulseaudio command line mixer.
 net-im/ferdium-bin 6.2.0: Combine your favorite messaging services into one application
-www-client/google-chrome 107.0.5304.110-r1: The web browser from Google
+www-client/google-chrome 107.0.5304.121-r1: The web browser from Google
 www-client/google-chrome-beta 108.0.5359.48-r1: The web browser from Google
 www-client/google-chrome-unstable 109.0.5414.10-r1: The web browser from Google
