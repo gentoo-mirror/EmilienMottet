@@ -51,6 +51,9 @@ src_install() {
 	exeopts -m0755
 	doexe "opt/${_PN^}/${_PN}"
 
+	# keep executable portable library
+	doexe opt/${_PN^}/{chrome-sandbox,chrome_crashpad_handler,lib*}
+
 	dosym "${FERDIUM_HOME}/${_PN}" "/usr/bin/${PN}"
 
 	newmenu usr/share/applications/${_PN}.desktop ${PN}.desktop
@@ -68,7 +71,7 @@ src_install() {
 
 	insinto /usr/share/licenses/${PN}
 	for _license in 'LICENSE.electron.txt' 'LICENSES.chromium.html'; do
-	doins opt/${_PN^}/$_license
+		doins opt/${_PN^}/$_license
 	done
 }
 
