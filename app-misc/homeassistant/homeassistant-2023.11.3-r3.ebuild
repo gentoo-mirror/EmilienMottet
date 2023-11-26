@@ -66,7 +66,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/bluetooth-data-tools-1.14.0[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
-	~dev-python/charset-normalizer-3.2.0[${PYTHON_USEDEP}]
+	>=dev-python/charset-normalizer-3.2.0[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.3.0[${PYTHON_USEDEP}]
 	~dev-python/cryptography-41.0.4[${PYTHON_USEDEP}]
 	~dev-python/dbus-fast-2.12.0[${PYTHON_USEDEP}]
