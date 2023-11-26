@@ -1,6 +1,6 @@
 app-misc/authy 1.9.0: 2FA software
 app-misc/hello-world 1.0: A classical example to use when starting on something new
-app-misc/homeassistant 2023.11.3-r2: Open-source home automation platform running on Python.
+app-misc/homeassistant 2023.11.3-r3: Open-source home automation platform running on Python.
 dev-python/protobuf-python 4.24.3-r2: Google's Protocol Buffers - Python bindings
 gui-apps/wl-mirror 0.12.2: a simple Wayland output mirror client
 mail-client/thunderbird 102.2.0-r1: Thunderbird Mail Client
