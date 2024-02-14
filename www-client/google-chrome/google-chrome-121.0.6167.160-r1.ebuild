@@ -65,7 +65,7 @@ RDEPEND="
 	x11-misc/xdg-utils
 	qt5? (
 		dev-qt/qtcore:5
-		dev-qt/qtgui:5[X]
+		dev-qt/qtgui:5[X?]
 		dev-qt/qtwidgets:5
 	)
 	qt6? ( dev-qt/qtbase:6[gui,widgets] )
