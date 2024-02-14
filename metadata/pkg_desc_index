@@ -9,6 +9,6 @@ media-sound/pamixer 1.4 9999: Pulseaudio command line mixer.
 net-im/ferdium-bin 6.3.0: Combine your favorite messaging services into one application
 net-misc/azure-cli 2.55.0: Microsoft Azure Command-Line Tools
 net-vpn/openconnect 9.12-r1 9999: Free client for Cisco AnyConnect SSL VPN software
-www-client/google-chrome 121.0.6167.160-r1: The web browser from Google
+www-client/google-chrome 121.0.6167.160-r2: The web browser from Google
 www-client/google-chrome-beta 108.0.5359.48-r1: The web browser from Google
 www-client/google-chrome-unstable 109.0.5414.10-r1: The web browser from Google
