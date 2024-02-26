@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=This provides the necessary firmware for Intel iVSC
+EAPI=8
+HOMEPAGE=https://github.com/intel/ivsc-firmware
+INHERIT=git-r3
+KEYWORDS=~amd64
+LICENSE=ivsc-firmware
+PROPERTIES=live
+RDEPEND=media-video/ipu6-drivers
+SLOT=0
+_eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
+_md5_=6f4d57843a552b75ffd3dca492959999

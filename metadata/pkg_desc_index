@@ -10,6 +10,8 @@ media-video/ipu6-drivers 9999: Drivers for MIPI cameras through the IPU6 on Inte
 net-im/ferdium-bin 6.3.0: Combine your favorite messaging services into one application
 net-misc/azure-cli 2.55.0: Microsoft Azure Command-Line Tools
 net-vpn/openconnect 9.12-r1 9999: Free client for Cisco AnyConnect SSL VPN software
+sys-firmware/ipu6-camera-bins 9999: Intel IPU6 camera binaries (Alder Lake)
+sys-firmware/ivsc-firmware 9999: This provides the necessary firmware for Intel iVSC
 www-client/google-chrome 121.0.6167.160-r2: The web browser from Google
 www-client/google-chrome-beta 108.0.5359.48-r1: The web browser from Google
 www-client/google-chrome-unstable 109.0.5414.10-r1: The web browser from Google
