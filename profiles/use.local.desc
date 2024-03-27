@@ -2,6 +2,9 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+media-libs/harfbuzz:experimental - Enable experimental APIs
+media-libs/harfbuzz:glib - Enable dev-libs/glib unicode functions
+media-libs/harfbuzz:graphite - Enable media-gfx/graphite2 complementary shaper
 net-vpn/openconnect:gssapi - Build GSSAPI support
 net-vpn/openconnect:libproxy - Enable proxy support
 net-vpn/openconnect:pskc - Enable PSKC file storage of HOTP/TOTP keys
