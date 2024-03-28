@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,9 +12,9 @@ inherit git-r3
 EGIT_REPO_URI="https://github.com/intel/ipu6-drivers.git"
 IVSC_REPO_URI="https://github.com/intel/ivsc-driver.git"
 
-
 DESCRIPTION="Drivers for MIPI cameras through the IPU6 on Intel Tiger Lake and Alder Lake platforms."
-HOMEPAGE="https://github.com/intel/ipu6-drivers"
+# HOMEPAGE="https://github.com/intel/ipu6-drivers"
+HOMEPAGE="https://github.com/jwrdegoede/ipu6-drivers"
 
 SLOT="0"
 LICENSE="GPL-2"
@@ -50,7 +50,6 @@ MODULE_NAMES="	hm11b1(drivers/media/i2c:${S}:drivers/media/i2c) \
 #PATCHES=(	"${S}/debian/patches/0001-build-disable-ivsc-depending-sensors.patch"
 #			"${S}/debian/patches/0003-build-fix-kernel-feature-macro-definitions.patch"
 #		)
-
 
 src_unpack() {
 	git-r3_src_unpack
