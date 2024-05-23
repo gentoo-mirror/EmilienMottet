@@ -4,11 +4,14 @@ app-misc/golden-cheetah 3.6: Cycling performance software
 app-misc/hello-world 1.0: A classical example to use when starting on something new
 app-misc/homeassistant 2023.11.3-r3: Open-source home automation platform running on Python.
 dev-python/protobuf-python 4.24.3-r2: Google's Protocol Buffers - Python bindings
+gui-apps/uwsm 9999: An ultralightweight stacking window manager
+gui-apps/waybar 0.10.3-r1: Highly customizable Wayland bar for Sway and Wlroots based compositors
 gui-apps/wl-mirror 0.12.2: a simple Wayland output mirror client
 mail-client/thunderbird 102.2.0-r1: Thunderbird Mail Client
 media-libs/gstreamer 1.22.10: Open source multimedia framework
 media-libs/harfbuzz 8.3.1-r1: An OpenType text shaping engine
 media-plugins/gst-plugins-icamerasrc 9999: Intel IPU6 camera source for GStreamer
+media-sound/libcava 0.10.1: Console-based Audio Visualizer for Alsa
 media-sound/pamixer 1.4 9999: Pulseaudio command line mixer.
 media-video/ipu6-drivers 9999: Drivers for MIPI cameras through the IPU6 on Intel Tiger Lake and Alder Lake platforms.
 net-im/ferdium-bin 6.3.0: Combine your favorite messaging services into one application

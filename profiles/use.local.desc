@@ -5,6 +5,8 @@
 media-libs/harfbuzz:experimental - Enable experimental APIs
 media-libs/harfbuzz:glib - Enable dev-libs/glib unicode functions
 media-libs/harfbuzz:graphite - Enable media-gfx/graphite2 complementary shaper
+media-sound/libcava:pipewire - Enable support for the media-video/pipewire backend
+media-sound/libcava:sndio - Enable support for the media-sound/sndio backend
 net-vpn/openconnect:gssapi - Build GSSAPI support
 net-vpn/openconnect:libproxy - Enable proxy support
 net-vpn/openconnect:pskc - Enable PSKC file storage of HOTP/TOTP keys
