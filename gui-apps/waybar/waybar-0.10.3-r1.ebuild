@@ -19,7 +19,7 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="evdev experimental jack +libinput +logind mpd mpris network pipewire pulseaudio sndio systemd test tray +udev upower wifi"
+IUSE="evdev experimental jack +libinput +logind mpd mpris network pipewire pulseaudio sndio systemd test tray +udev upower wifi libcava"
 REQUIRED_USE="
 	upower? ( logind )
 "
@@ -68,6 +68,7 @@ RDEPEND="
 	udev? ( virtual/libudev:= )
 	upower? ( sys-power/upower )
 	wifi? ( sys-apps/util-linux )
+	libcava? ( media-sound/libcava )
 "
 DEPEND="${RDEPEND}
 	dev-libs/wayland-protocols
