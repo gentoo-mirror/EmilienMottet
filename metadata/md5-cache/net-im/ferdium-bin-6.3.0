@@ -10,5 +10,5 @@ LICENSE=Apache-2.0
 RDEPEND=wayland? ( dev-libs/wayland )
 SLOT=0
 SRC_URI=amd64? ( https://github.com/ferdium/ferdium-app/releases/download/v6.3.0/Ferdium-linux-6.3.0-amd64.deb )
-_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3
+_eclasses_=desktop	56973babb9c5f19cab0eeb53ece644c6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961
 _md5_=f638305261b40466340d8c91f009fd63
