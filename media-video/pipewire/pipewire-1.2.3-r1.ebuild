@@ -140,6 +140,7 @@ RDEPEND="
 		!media-sound/jack-audio-connection-kit
 		!media-sound/jack2
 	)
+	libcamera? ( media-libs/libcamera )
 	liblc3? ( media-sound/liblc3 )
 	lv2? ( media-libs/lilv )
 	modemmanager? ( >=net-misc/modemmanager-1.10.0 )
