@@ -251,7 +251,6 @@ multilib_src_configure() {
 		$(meson_native_use_feature liblc3 bluez5-codec-lc3)
 		$(meson_native_use_feature lv2)
 		$(meson_native_use_feature v4l v4l2)
-		-Dlibcamera=disabled # libcamera is not in Portage tree
 		$(meson_native_use_feature roc)
 		$(meson_native_use_feature readline)
 		$(meson_native_use_feature ssl raop)
