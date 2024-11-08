@@ -102,7 +102,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/mashumaro-3.13.1[${PYTHON_USEDEP}]
 	>=dev-python/multidict-6.0.2[${PYTHON_USEDEP}]
 	~media-libs/mutagen-1.47.0[${PYTHON_USEDEP}]
-	~dev-python/numpy-1.26.4[${PYTHON_USEDEP}]
+	>=dev-python/numpy-1.26.4[${PYTHON_USEDEP}]
 	~dev-python/orjson-3.10.7[${PYTHON_USEDEP}]
 	>=dev-python/packaging-23.1[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
