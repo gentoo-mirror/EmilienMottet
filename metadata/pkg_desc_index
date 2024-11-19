@@ -4,7 +4,13 @@ app-misc/hello-world 1.0: A classical example to use when starting on something 
 app-misc/home-assistant-cli 0.9.6-r1: The Home Assistant Command-line Interface (hass-cli)
 app-misc/homeassistant-full 2024.10.4-r2: Open-source home automation platform running on Python.
 dev-python/bellows 0.42.0: Library implementing EZSP
+dev-python/envs 1.4-r2: Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts.
+dev-python/grpcio 1.59.0 1.66.2: High-performance RPC framework (python libraries)
+dev-python/grpcio-reflection 1.59.0 1.66.2: Standard Protobuf Reflection Service for gRPC
+dev-python/grpcio-status 1.59.0 1.66.2: Status proto mapping for gRPC
+dev-python/home-assistant-intents 2024.4.24 2024.6.21 2024.9.4 2024.10.2 2024.10.30: Intents for Home Assistant
 dev-python/protobuf-python 4.24.3-r2: Google's Protocol Buffers - Python bindings
+dev-python/pychromecast 14.0.1 14.0.3 14.0.5: Python module to talk to Google Chromecast
 dev-python/zha-quirks 0.0.124: Library implementing Zigpy quirks for ZHA in Home Assistant
 gui-apps/uwsm 9999: An ultralightweight stacking window manager
 gui-apps/waybar 0.10.3-r1 0.10.4-r1 0.11.0-r1: Highly customizable Wayland bar for Sway and Wlroots based compositors
