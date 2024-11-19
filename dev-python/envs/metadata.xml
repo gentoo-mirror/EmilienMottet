@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">envs</remote-id>
+    <remote-id type="github">bjinwright/envs</remote-id>
+    <maintainer status="unknown">
+      <email>bjinwright@qwigo.com</email>
+      <name>Brian Jinwright</name>
+    </maintainer>
+  </upstream>
+  <use>
+    <flag name="cli">add cli support</flag>
+  </use>
+</pkgmetadata>
