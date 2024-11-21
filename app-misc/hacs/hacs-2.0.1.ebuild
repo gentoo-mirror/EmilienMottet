@@ -26,12 +26,6 @@ src_install() {
 		die "Home Assistant directory ($ha_path) not found."
 	fi
 
-	# Créer le répertoire custom_components si nécessaire
-	mkdir -p "${ha_path}/custom_components"
-
-	# Télécharger et installer HACS (version 2.0.1)
-	unzip -o ${DISTDIR}/hacs.zip -d "${ha_path}/custom_components/"
-
 	# Vérification de la version de Home Assistant
 	local current_version
 	local target_version
