@@ -10,7 +10,6 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
 IUSE=""
 
-DEPEND=">=dev-python/pip-20.0"
 RDEPEND="app-misc/homeassistant-full"
 
 src_install() {
