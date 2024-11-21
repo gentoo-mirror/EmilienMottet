@@ -11,8 +11,7 @@ KEYWORDS="~amd64 ~arm ~x86"
 IUSE=""
 
 DEPEND=">=dev-python/pip-20.0"
-RDEPEND="app-misc/homeassistant
-		 || ( app-misc/homeassistant-full app-misc/homeassistant-min )"
+RDEPEND="app-misc/homeassistant-full"
 
 src_install() {
 	local ha_path="/etc/homeassistant"
