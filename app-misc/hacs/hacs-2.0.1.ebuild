@@ -12,6 +12,12 @@ IUSE=""
 
 RDEPEND="app-misc/homeassistant-full"
 
+src_unpack() {
+	unpack ${A}
+	# Si l'archive est un zip, tu peux utiliser unzip et spécifier le répertoire cible
+	unzip -q ${DISTDIR}/hacs.zip -d ${WORKDIR}/hacs-2.0.1
+}
+
 src_install() {
 	local ha_path="/etc/homeassistant"
 
