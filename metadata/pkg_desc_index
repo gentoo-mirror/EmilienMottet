@@ -5,7 +5,7 @@ app-misc/home-assistant-cli 0.9.6-r1: The Home Assistant Command-line Interface 
 app-misc/homeassistant-full 2024.10.4-r2: Open-source home automation platform running on Python.
 dev-python/bellows 0.42.0: Library implementing EZSP
 dev-python/envs 1.4-r3: Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts.
-dev-python/garminconnect-ha 0.1.6 0.2.19: Garmin Connect Python 3 API wrapper for Home Assistant
+dev-python/garminconnect-ha 0.1.6: Garmin Connect Python 3 API wrapper for Home Assistant
 dev-python/grpcio 1.59.0-r1 1.66.2: High-performance RPC framework (python libraries)
 dev-python/grpcio-reflection 1.59.0-r1 1.66.2: Standard Protobuf Reflection Service for gRPC
 dev-python/grpcio-status 1.59.0-r1 1.66.2: Status proto mapping for gRPC
