@@ -25,7 +25,7 @@ REQUIRED_USE="qt5? ( tiff )"
 
 DEPEND="
 	dev-libs/libyaml:=
-	dev-python/jinja2
+	dev-python/jinja
 	dev-python/ply
 	dev-python/pyyaml
 	|| (
@@ -56,9 +56,10 @@ RDEPEND="
 	${DEPEND}
 	trace? ( dev-util/lttng-tools )
 "
-
 src_configure() {
 	local emesonargs=(
+		# Broken for >=dev-pyhon/sphinx-7
+		# $(meson_feature doc documentation)
 		-Ddocumentation=disabled
 		$(meson_feature libevent cam)
 		$(meson_feature gstreamer)
