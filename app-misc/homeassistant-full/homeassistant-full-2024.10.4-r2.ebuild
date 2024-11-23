@@ -105,7 +105,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/numpy-1.26.4[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.10.7[${PYTHON_USEDEP}]
 	>=dev-python/packaging-23.1[${PYTHON_USEDEP}]
-	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
+	>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	>=dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
 	~dev-python/pillow-10.4.0[${PYTHON_USEDEP}]
 	~dev-python/protobuf-4.25.4[${PYTHON_USEDEP}]
@@ -681,7 +681,7 @@ RDEPEND="${RDEPEND}
 	motionmount? ( ~dev-python/python-MotionMount-2.2.0[${PYTHON_USEDEP}] )
 	motion_blinds? ( ~dev-python/motionblinds-0.6.25[${PYTHON_USEDEP}] )
 	mpd? ( ~dev-python/python-mpd2-3.1.1[${PYTHON_USEDEP}] )
-	mqtt? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
+	mqtt? ( >=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	msteams? ( ~dev-python/pymsteams-0.1.12[${PYTHON_USEDEP}] )
 	mullvad? ( ~dev-python/mullvad-api-1.0.0[${PYTHON_USEDEP}] )
 	mutesync? ( ~dev-python/mutesync-0.0.1[${PYTHON_USEDEP}] )
@@ -911,7 +911,7 @@ RDEPEND="${RDEPEND}
 	sfr_box? ( ~dev-python/sfrbox-api-0.0.11[${PYTHON_USEDEP}] )
 	sharkiq? ( ~dev-python/sharkiq-1.0.2[${PYTHON_USEDEP}] )
 	shelly? ( ~dev-python/aioshelly-11.4.2[${PYTHON_USEDEP}] )
-	shiftr? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
+	shiftr? ( >=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	shodan? ( ~net-analyzer/shodan-1.28.0 )
 	sht31? ( ~dev-python/Adafruit-GPIO-1.0.3[${PYTHON_USEDEP}] ~dev-python/Adafruit-SHT31-1.0.2[${PYTHON_USEDEP}] )
 	sia? ( ~dev-python/pysiaalarm-3.1.1[${PYTHON_USEDEP}] )
