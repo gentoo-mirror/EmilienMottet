@@ -107,7 +107,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/packaging-23.1[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	>=dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
-	~dev-python/pillow-10.4.0[${PYTHON_USEDEP}]
+	>=dev-python/pillow-10.4.0[${PYTHON_USEDEP}]
 	~dev-python/protobuf-4.25.4[${PYTHON_USEDEP}]
 	>=dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycountry-23.12.11[${PYTHON_USEDEP}]
@@ -326,7 +326,7 @@ RDEPEND="${RDEPEND}
 	dlna_dms? ( ~dev-python/async-upnp-client-0.40.0[${PYTHON_USEDEP}] )
 	dnsip? ( ~dev-python/aiodns-3.2.0[${PYTHON_USEDEP}] )
 	dominos? ( ~dev-python/pizzapi-0.0.6[${PYTHON_USEDEP}] )
-	doods? ( ~dev-python/pydoods-1.0.2[${PYTHON_USEDEP}] ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
+	doods? ( ~dev-python/pydoods-1.0.2[${PYTHON_USEDEP}] >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
 	doorbird? ( ~dev-python/DoorBirdPy-3.0.4[${PYTHON_USEDEP}] )
 	dormakaba_dkey? ( ~dev-python/py-dormakaba-dkey-1.0.5[${PYTHON_USEDEP}] )
 	dovado? ( ~dev-python/dovado-0.4.1[${PYTHON_USEDEP}] )
@@ -444,7 +444,7 @@ RDEPEND="${RDEPEND}
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[${PYTHON_USEDEP}] )
 	gc100? ( ~dev-python/python-gc100-1.0.3_alpha0[${PYTHON_USEDEP}] )
 	gdacs? ( ~dev-python/aio-georss-gdacs-0.10[${PYTHON_USEDEP}] )
-	generic? ( ~dev-python/ha-av-10.1.1[${PYTHON_USEDEP}] ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
+	generic? ( ~dev-python/ha-av-10.1.1[${PYTHON_USEDEP}] >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
 	geniushub? ( ~dev-python/geniushub-client-0.7.1[${PYTHON_USEDEP}] )
 	geocaching? ( ~dev-python/geocachingapi-0.2.1[${PYTHON_USEDEP}] )
 	geonetnz_quakes? ( ~dev-python/aio-geojson-geonetnz-quakes-0.16[${PYTHON_USEDEP}] )
@@ -534,8 +534,8 @@ RDEPEND="${RDEPEND}
 	iglo? ( ~dev-python/iglo-1.2.7[${PYTHON_USEDEP}] )
 	ign_sismologia? ( ~dev-python/georss-ign-sismologia-client-0.8[${PYTHON_USEDEP}] )
 	ihc? ( ~dev-python/defusedxml-0.7.1[${PYTHON_USEDEP}] ~dev-python/ihcsdk-2.8.5[${PYTHON_USEDEP}] )
-	image? ( ~dev-python/pillow-9.3.0[${PYTHON_USEDEP}] )
-	image_upload? ( ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
+	image? ( >=dev-python/pillow-9.3.0[${PYTHON_USEDEP}] )
+	image_upload? ( >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
 	imap? ( ~dev-python/aioimaplib-1.1.0[${PYTHON_USEDEP}] )
 	imgw_pib? ( ~dev-python/imgw-pib-1.0.6[${PYTHON_USEDEP}] )
 	improv_ble? ( ~dev-python/py-improv-ble-client-1.0.3[${PYTHON_USEDEP}] )
@@ -637,7 +637,7 @@ RDEPEND="${RDEPEND}
 	mariadb? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	marytts? ( ~dev-python/speak2mary-1.4.0[${PYTHON_USEDEP}] )
 	mastodon? ( ~dev-python/Mastodon-py-1.8.1[${PYTHON_USEDEP}] )
-	matrix? ( ~dev-python/matrix-nio-0.25.2[${PYTHON_USEDEP}] ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
+	matrix? ( ~dev-python/matrix-nio-0.25.2[${PYTHON_USEDEP}] >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
 	matter? ( ~dev-python/python-matter-server-6.5.2[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[${PYTHON_USEDEP}] )
 	mcp23017? ( ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] ~dev-python/adafruit-circuitpython-mcp230xx-2.2.2[${PYTHON_USEDEP}] )
@@ -808,7 +808,7 @@ RDEPEND="${RDEPEND}
 	prometheus? ( ~dev-python/prometheus-client-0.21.0[${PYTHON_USEDEP}] )
 	prosegur? ( ~dev-python/pyprosegur-0.0.9[${PYTHON_USEDEP}] )
 	proxmoxve? ( ~dev-python/proxmoxer-2.0.1[${PYTHON_USEDEP}] )
-	proxy? ( ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
+	proxy? ( >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
 	prusalink? ( ~dev-python/pyprusalink-2.1.1[${PYTHON_USEDEP}] )
 	ps4? ( ~dev-python/pyps4-2ndscreen-1.3.1[${PYTHON_USEDEP}] )
 	pulseaudio_loopback? ( ~dev-python/pulsectl-23.5.2[${PYTHON_USEDEP}] )
@@ -824,7 +824,7 @@ RDEPEND="${RDEPEND}
 	qld_bushfire? ( ~dev-python/georss-qld-bushfire-alert-client-0.8[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
 	qnap_qsw? ( ~dev-python/aioqsw-0.4.1[${PYTHON_USEDEP}] )
-	qrcode? ( ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] ~dev-python/pyzbar-0.1.7[${PYTHON_USEDEP}] )
+	qrcode? ( >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] ~dev-python/pyzbar-0.1.7[${PYTHON_USEDEP}] )
 	quantum_gateway? ( ~dev-python/quantum-gateway-0.0.8[${PYTHON_USEDEP}] )
 	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
 	qwikswitch? ( ~dev-python/pyqwikswitch-0.93[${PYTHON_USEDEP}] )
@@ -907,7 +907,7 @@ RDEPEND="${RDEPEND}
 	serial_pm? ( ~dev-python/pmsensor-0.4[${PYTHON_USEDEP}] )
 	sesame? ( ~dev-python/pysesame2-1.0.1[${PYTHON_USEDEP}] )
 	seventeentrack? ( ~dev-python/pyseventeentrack-1.0.1[${PYTHON_USEDEP}] )
-	seven_segments? ( ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
+	seven_segments? ( >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] )
 	sfr_box? ( ~dev-python/sfrbox-api-0.0.11[${PYTHON_USEDEP}] )
 	sharkiq? ( ~dev-python/sharkiq-1.0.2[${PYTHON_USEDEP}] )
 	shelly? ( ~dev-python/aioshelly-11.4.2[${PYTHON_USEDEP}] )
@@ -915,7 +915,7 @@ RDEPEND="${RDEPEND}
 	shodan? ( ~net-analyzer/shodan-1.28.0 )
 	sht31? ( ~dev-python/Adafruit-GPIO-1.0.3[${PYTHON_USEDEP}] ~dev-python/Adafruit-SHT31-1.0.2[${PYTHON_USEDEP}] )
 	sia? ( ~dev-python/pysiaalarm-3.1.1[${PYTHON_USEDEP}] )
-	sighthound? ( ~dev-python/pillow-10.4.0[${PYTHON_USEDEP}] ~dev-python/simplehound-0.3[${PYTHON_USEDEP}] )
+	sighthound? ( >=dev-python/pillow-10.4.0[${PYTHON_USEDEP}] ~dev-python/simplehound-0.3[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.24[${PYTHON_USEDEP}] )
 	simplefin? ( ~dev-python/simplefin4py-0.0.18[${PYTHON_USEDEP}] )
 	simplepush? ( ~dev-python/simplepush-2.2.3[${PYTHON_USEDEP}] )
