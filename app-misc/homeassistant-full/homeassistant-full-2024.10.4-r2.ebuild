@@ -310,7 +310,7 @@ RDEPEND="${RDEPEND}
 	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.18.3[${PYTHON_USEDEP}] )
 	devolo_home_network? ( ~dev-python/devolo-plc-api-1.4.1[${PYTHON_USEDEP}] )
 	dexcom? ( ~dev-python/pydexcom-0.2.3[${PYTHON_USEDEP}] )
-	dhcp? ( ~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}] ~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}] ~dev-python/cached-ipaddress-0.6.0[${PYTHON_USEDEP}] )
+	dhcp? ( ~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}] ~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}] ~dev-python/cached-ipaddress-0.6.0[${PYTHON_USEDEP}] net-libs/libpcap )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
 	digitalloggers? ( ~dev-python/dlipower-0.7.165[${PYTHON_USEDEP}] )
 	digital_ocean? ( ~dev-python/python-digitalocean-1.13.2[${PYTHON_USEDEP}] )
