@@ -8,16 +8,16 @@ CRATES="
 
 declare -A GIT_CRATES=(
 	[async_zip]='https://github.com/charliermarsh/rs-async-zip;c909fda63fcafe4af496a07bfda28a5aae97e58d;rs-async-zip-%commit%'
-	[pubgrub]='https://github.com/astral-sh/pubgrub;b70cf707aa43f21b32f3a61b8a0889b15032d5c4;pubgrub-%commit%'
+	[pubgrub]='https://github.com/astral-sh/pubgrub;648aa343486e5529953153781fc86025c73c4a61;pubgrub-%commit%'
 	[tl]='https://github.com/astral-sh/tl;6e25b2ee2513d75385101a8ff9f591ef51f314ec;tl-%commit%'
-	[version-ranges]='https://github.com/astral-sh/pubgrub;b70cf707aa43f21b32f3a61b8a0889b15032d5c4;pubgrub-%commit%/version-ranges'
+	[version - ranges]='https://github.com/astral-sh/pubgrub;648aa343486e5529953153781fc86025c73c4a61;pubgrub-%commit%/version-ranges'
 )
 
 RUST_MIN_VER="1.83.0"
 
 inherit cargo check-reqs
 
-CRATE_PV=0.5.29
+CRATE_PV=0.5.20
 DESCRIPTION="A Python package installer and resolver, written in Rust"
 HOMEPAGE="
 	https://github.com/astral-sh/uv/
@@ -31,7 +31,7 @@ SRC_URI="
 "
 if [[ ${PKGBUMPING} != ${PVR} ]]; then
 	SRC_URI+="
-		https://github.com/gentoo-crate-dist/uv/releases/download/${CRATE_PV}/uv-${CRATE_PV}-crates.tar.xz
+		https://dev.gentoo.org/~mgorny/dist/uv-${CRATE_PV}-crates.tar.xz
 	"
 fi
 
@@ -101,7 +101,7 @@ src_prepare() {
 	# https://github.com/alexcrichton/bzip2-rs/issues/104
 	mkdir "${T}/pkg-config" || die
 	export PKG_CONFIG_PATH=${T}/pkg-config${PKG_CONFIG_PATH+:${PKG_CONFIG_PATH}}
-	cat >> "${T}/pkg-config/bzip2.pc" <<-EOF || die
+	cat >>"${T}/pkg-config/bzip2.pc" <<-EOF || die
 		Name: bzip2
 		Version: 9999
 		Description:
