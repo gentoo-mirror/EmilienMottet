@@ -53,7 +53,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/aiofiles-24.1.0[${PYTHON_USEDEP}]
 	~dev-python/aiohasupervisor-0.2.1[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-fast-zlib-0.2.0[${PYTHON_USEDEP}]
-	~dev-python/aiohttp-3.11.11[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.11.11[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/aiozoneinfo-0.2.1[${PYTHON_USEDEP}]
 	~dev-python/anyio-4.6.2_p1[${PYTHON_USEDEP}]
