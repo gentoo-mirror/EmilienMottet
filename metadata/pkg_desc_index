@@ -4,6 +4,7 @@ app-misc/hello-world 1.0: A classical example to use when starting on something 
 app-misc/home-assistant-cli 0.9.6-r1: The Home Assistant Command-line Interface (hass-cli)
 app-misc/homeassistant-full 2024.10.4-r2: Open-source home automation platform running on Python.
 dev-python/bellows 0.42.0: Library implementing EZSP
+dev-python/cryptography 43.0.1 44.0.2: Library providing cryptographic recipes and primitives
 dev-python/envs 1.4-r3: Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts.
 dev-python/garminconnect-ha 0.1.6: Garmin Connect Python 3 API wrapper for Home Assistant
 dev-python/grpcio 1.59.0-r1 1.66.2: High-performance RPC framework (python libraries)
