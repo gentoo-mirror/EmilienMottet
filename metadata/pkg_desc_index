@@ -11,6 +11,7 @@ dev-python/garminconnect-ha 0.1.6: Garmin Connect Python 3 API wrapper for Home 
 dev-python/grpcio 1.59.0-r1 1.66.2: High-performance RPC framework (python libraries)
 dev-python/grpcio-reflection 1.59.0-r1 1.66.2: Standard Protobuf Reflection Service for gRPC
 dev-python/grpcio-status 1.59.0-r1 1.66.2: Status proto mapping for gRPC
+dev-python/hass-nabucasa 0.81.1-r2 0.83.0-r2 0.86.0-r1: Home Assistant cloud integration by Nabu Casa, Inc.
 dev-python/home-assistant-intents 2024.4.24 2024.6.21 2024.9.4 2024.10.2-r1 2024.10.30: Intents for Home Assistant
 dev-python/lxml 5.3.0 5.3.1: A Pythonic binding for the libxml2 and libxslt libraries
 dev-python/orjson 3.10.12 3.10.15 3.10.16: Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
