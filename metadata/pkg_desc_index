@@ -2,7 +2,8 @@ app-crypt/safenet-authentication-client 10.8.1050: Thales/Gemalto SafeNet Authen
 app-misc/golden-cheetah 3.6: Cycling performance software
 app-misc/hello-world 1.0: A classical example to use when starting on something new
 app-misc/home-assistant-cli 0.9.6-r1: The Home Assistant Command-line Interface (hass-cli)
-app-misc/homeassistant-full 2024.10.4-r2: Open-source home automation platform running on Python.
+app-misc/homeassistant 2024.12.5: Open-source home automation platform running on Python.
+app-misc/homeassistant-full 2024.10.4-r2 2024.12.5-r1: Open-source home automation platform running on Python.
 dev-python/bellows 0.42.0: Library implementing EZSP
 dev-python/cryptography 43.0.1 44.0.2: Library providing cryptographic recipes and primitives
 dev-python/envs 1.4-r3: Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts.
@@ -18,7 +19,7 @@ dev-python/psutil 6.1.0 7.0.0: Retrieve information on running processes and sys
 dev-python/pychromecast 14.0.1 14.0.3-r1 14.0.5-r1: Python module to talk to Google Chromecast
 dev-python/pyopenssl 24.2.1 25.0.0: Python interface to the OpenSSL library
 dev-python/sqlalchemy 1.4.54 2.0.36 2.0.38 2.0.39: Python SQL toolkit and Object Relational Mapper
-dev-python/uv 0.5.21 0.5.29 0.6.2 0.6.3 0.6.4: A Python package installer and resolver, written in Rust
+dev-python/uv 0.5.29 0.6.2 0.6.3 0.6.4: A Python package installer and resolver, written in Rust
 dev-python/zha-quirks 0.0.124: Library implementing Zigpy quirks for ZHA in Home Assistant
 gui-apps/uwsm 9999: An ultralightweight stacking window manager
 gui-apps/waybar 0.10.3-r1 0.10.4-r1 0.11.0-r1 0.11.0-r2: Highly customizable Wayland bar for Sway and Wlroots based compositors
