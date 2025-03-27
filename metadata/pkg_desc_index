@@ -18,7 +18,6 @@ dev-python/orjson 3.10.12 3.10.15 3.10.16: Fast, correct Python JSON library sup
 dev-python/propcache 0.2.0 0.2.1 0.3.0: Yet another URL library
 dev-python/psutil 6.1.0 7.0.0: Retrieve information on running processes and system utilization
 dev-python/pychromecast 14.0.1 14.0.3-r1 14.0.5-r1: Python module to talk to Google Chromecast
-dev-python/pyopenssl 24.2.1 25.0.0: Python interface to the OpenSSL library
 dev-python/sqlalchemy 1.4.54 2.0.36 2.0.38 2.0.39: Python SQL toolkit and Object Relational Mapper
 dev-python/uv 0.5.29 0.6.2 0.6.3 0.6.4: A Python package installer and resolver, written in Rust
 dev-python/zha-quirks 0.0.124: Library implementing Zigpy quirks for ZHA in Home Assistant
