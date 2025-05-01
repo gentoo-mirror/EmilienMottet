@@ -24,7 +24,6 @@ dev-python/zha-quirks 0.0.124: Library implementing Zigpy quirks for ZHA in Home
 gui-apps/uwsm 9999: An ultralightweight stacking window manager
 gui-apps/waybar 0.10.3-r1 0.10.4-r1 0.11.0-r1 0.11.0-r2: Highly customizable Wayland bar for Sway and Wlroots based compositors
 gui-apps/wl-mirror 0.12.2: a simple Wayland output mirror client
-mail-client/thunderbird 102.2.0-r1: Thunderbird Mail Client
 media-libs/gstreamer 1.22.10: Open source multimedia framework
 media-libs/harfbuzz 8.3.1-r1: An OpenType text shaping engine
 media-libs/libcamera 0.3.2 9999: A complex camera support library for Linux, Android, and ChromeOS
