@@ -40,3 +40,4 @@ sys-firmware/ivsc-firmware 9999: This provides the necessary firmware for Intel 
 www-client/google-chrome 121.0.6167.160-r2: The web browser from Google
 www-client/google-chrome-beta 108.0.5359.48-r1: The web browser from Google
 www-client/google-chrome-unstable 109.0.5414.10-r1: The web browser from Google
+x11-misc/autotiling 1.9.2 1.9.3-r1: Script for sway and i3 to automatically switch the window split orientation
