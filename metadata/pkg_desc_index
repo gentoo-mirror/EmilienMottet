@@ -5,6 +5,7 @@ app-misc/home-assistant-cli 0.9.6-r1: The Home Assistant Command-line Interface 
 app-misc/homeassistant 2024.12.5: Open-source home automation platform running on Python.
 app-misc/homeassistant-full 2024.10.4-r2 2024.12.5-r1: Open-source home automation platform running on Python.
 dev-python/bellows 0.42.0: Library implementing EZSP
+dev-python/colorzero 2.0 2.0-r1: Yet another Python color library
 dev-python/cryptography 43.0.1 44.0.2: Library providing cryptographic recipes and primitives
 dev-python/envs 1.4-r3: Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts.
 dev-python/garminconnect-ha 0.1.6: Garmin Connect Python 3 API wrapper for Home Assistant
@@ -19,6 +20,7 @@ dev-python/orjson 3.10.12 3.10.15 3.10.16: Fast, correct Python JSON library sup
 dev-python/propcache 0.2.0 0.2.1 0.3.0: Yet another URL library
 dev-python/psutil 6.1.0 7.0.0: Retrieve information on running processes and system utilization
 dev-python/pychromecast 14.0.1 14.0.3-r1 14.0.5-r1: Python module to talk to Google Chromecast
+dev-python/pyserial-asyncio 0.6: Python Serial Port Extension - Asynchronous I/O support
 dev-python/sqlalchemy 1.4.54 2.0.36 2.0.38 2.0.39: Python SQL toolkit and Object Relational Mapper
 dev-python/uv 0.5.29 0.6.2 0.6.3 0.6.4: A Python package installer and resolver, written in Rust
 dev-python/zha-quirks 0.0.124: Library implementing Zigpy quirks for ZHA in Home Assistant
