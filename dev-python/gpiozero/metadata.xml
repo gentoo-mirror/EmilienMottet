@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">gpiozero</remote-id>
+    <remote-id type="github">gpiozero/gpiozero</remote-id>
+    <doc>https://pythonhosted.org/gpiozero/</doc>
+    <maintainer status="unknown">
+      <email>ben@bennuttall.com</email>
+      <name>Ben Nuttall</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
