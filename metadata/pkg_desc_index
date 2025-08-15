@@ -36,6 +36,7 @@ media-sound/pamixer 1.4 9999: Pulseaudio command line mixer.
 media-video/ipu6-drivers 9999: Drivers for MIPI cameras through the IPU6 on Intel Tiger Lake and Alder Lake platforms.
 media-video/pipewire 1.2.3-r1 1.2.4-r1 1.2.5-r1 1.2.6-r1 1.2.7-r1: Multimedia processing graphs
 net-im/ferdium-bin 6.3.0: Combine your favorite messaging services into one application
+net-misc/intune-portal 1.2312.35: Microsoft Intune Portal
 net-vpn/openconnect 9.12-r1 9999: Free client for Cisco AnyConnect SSL VPN software
 sys-firmware/ipu6-camera-bins 9999: Intel IPU6 camera binaries (Alder Lake)
 sys-firmware/ivsc-firmware 9999: This provides the necessary firmware for Intel iVSC
